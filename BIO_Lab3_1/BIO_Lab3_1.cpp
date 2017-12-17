@@ -1,4 +1,4 @@
-// BIO_Lab3_1.cpp: определяет точку входа для консольного приложения.
+п»ї// BIO_Lab3_1.cpp: РѕРїСЂРµРґРµР»СЏРµС‚ С‚РѕС‡РєСѓ РІС…РѕРґР° РґР»СЏ РєРѕРЅСЃРѕР»СЊРЅРѕРіРѕ РїСЂРёР»РѕР¶РµРЅРёСЏ.
 //
 #include "stdafx.h"
 #include <iostream>
@@ -106,16 +106,16 @@ int main()
 	setlocale(LC_ALL, "RUS");
 	ifstream fin("input.txt");
 	ofstream fout("output.txt");
-	if (!fin.is_open()) // если файл не открыт
-		cout << "Файл не может быть открыт!\n"; // сообщить об этом
+	if (!fin.is_open()) // РµСЃР»Рё С„Р°Р№Р» РЅРµ РѕС‚РєСЂС‹С‚
+		cout << "Р¤Р°Р№Р» РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚РєСЂС‹С‚!\n"; // СЃРѕРѕР±С‰РёС‚СЊ РѕР± СЌС‚РѕРј
 	else
 	{
 		string lc;
 		string tc;
 		getline(fin, lc, ' ');
 		getline(fin, tc, '\n');
-		int l = atoi(lc.c_str());	// размер шаблона
-		int t = atoi(tc.c_str());	// число экземпляров ДНК
+		int l = atoi(lc.c_str());	// СЂР°Р·РјРµСЂ С€Р°Р±Р»РѕРЅР°
+		int t = atoi(tc.c_str());	// С‡РёСЃР»Рѕ СЌРєР·РµРјРїР»СЏСЂРѕРІ Р”РќРљ
 
 		cout << l << endl;
 		cout << t << endl;
